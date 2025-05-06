@@ -5,6 +5,8 @@
     "type": "magento2-module",
     "require": {
         "magento/framework": "^102.0 || ^103.0",
+        "magento/module-checkout": "^100.0",
+        "magewirephp/magewire": "^1.6",
         "yireo/magento2-googletagmanager2": "^3.10"
     },
     "license": [
