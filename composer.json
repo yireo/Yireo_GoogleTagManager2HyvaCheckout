@@ -1,0 +1,21 @@
+{
+    "name": "yireo/magento2-googletagmanager2-hyva-checkout",
+    "version": "1.0.0",
+    "description": "N/A",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "^102.0 || ^103.0",
+        "yireo/magento2-googletagmanager2": "^3.10"
+    },
+    "license": [
+        "OSL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Yireo\\GoogleTagManager2HyvaCheckout\\": ""
+        }
+    }
+}
