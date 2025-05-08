@@ -1,6 +1,6 @@
 # Yireo_GoogleTagManager2HyvaCheckout
 
-**This Magento 2 module adds additional logic of the [Yireo GoogleTagManager 2](https://github.com/yireo/Yireo_GoogleTagManager2) to the [Hyvä Checkout]([[https://loki-checkout.com/](https://www.hyva.io/)](https://www.hyva.io/).**
+**This Magento 2 module adds additional logic of the [Yireo GoogleTagManager 2](https://github.com/yireo/Yireo_GoogleTagManager2) to the [Hyvä Checkout](https://www.hyva.io/).**
 
 ### Installation
 ```bash
