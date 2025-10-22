@@ -1,0 +1,28 @@
+{
+    "sequence": [
+        "Magento_Checkout",
+        "Yireo_GoogleTagManager2"
+    ],
+    "modules": [
+        "Magento_Backend",
+        "Magento_Catalog",
+        "Magento_CatalogInventory",
+        "Magento_CatalogSearch",
+        "Magento_Checkout",
+        "Magento_Config",
+        "Magento_ConfigurableProduct",
+        "Magento_Cookie",
+        "Magento_Customer",
+        "Magento_Eav",
+        "Magento_Payment",
+        "Magento_Quote",
+        "Magento_Sales",
+        "Magento_Store",
+        "Magento_Tax",
+        "Yireo_CspUtilities",
+        "Yireo_GoogleTagManager2"
+    ],
+    "components": [],
+    "config": [],
+    "tests": []
+}
