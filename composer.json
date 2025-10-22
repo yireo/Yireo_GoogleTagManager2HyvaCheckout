@@ -1,6 +1,6 @@
 {
     "name": "yireo/magento2-googletagmanager2-hyva-checkout",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "N/A",
     "type": "magento2-module",
     "require": {
