@@ -19,7 +19,7 @@ $beginCheckoutEvent = $block->getData('begin_checkout_event');
         });
 
         (function () {
-            yireoGoogleTagManager2Pusher(<?= $escaper->escapeHtml(json_encode($beginCheckoutEvent->get())) ?>, 'Hyva Checkout');
+            yireoGoogleTagManager2Pusher(<?= /* @noEscape */ json_encode($beginCheckoutEvent->get()) ?>, 'Hyva Checkout');
         })();
     </script>
 </div>
