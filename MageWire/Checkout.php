@@ -26,7 +26,6 @@ class Checkout extends Component
 
     public function boot(): void
     {
-        // @phpstan-ignore-next-line
         parent::boot();
 
         $this->listeners['shipping_method_selected'] = 'triggerShippingMethod';
