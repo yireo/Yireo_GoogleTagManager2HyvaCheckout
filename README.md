@@ -7,8 +7,10 @@
 ![Latest Version](https://img.shields.io/packagist/v/yireo/magento2-googletagmanager2-hyva-checkout)
 <!-- badges.specs.end -->
 
-
 **This Magento 2 module adds additional logic of the [Yireo GoogleTagManager 2](https://github.com/yireo/Yireo_GoogleTagManager2) to the [Hyvä Checkout](https://www.hyva.io/hyva-checkout.html).**
+
+> [!WARNING]
+> This repository is maintained by Yireo. Unfortunately we are not a partner of Hyva, neither do we have a Hyva Checkout subscription. We therefore are not maintaining this repository. We do accept Pull Requests and will merge them right away and without testing.
 
 ### Installation
 ```bash
