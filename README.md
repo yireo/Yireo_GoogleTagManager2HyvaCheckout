@@ -18,6 +18,12 @@ composer require yireo/magento2-googletagmanager2-hyva-checkout
 bin/magento module:enable Yireo_GoogleTagManager2HyvaCheckout
 ```
 
+### Compatibility
+| Module | Hyvä Checkout | Magewire |
+| --- | --- | --- |
+| 2.x | 3.x | 3.7+ |
+| 1.0.x | 1.x | 1.x |
+
 ## Current status
 
 <!-- badges.test.start -->

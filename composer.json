@@ -1,12 +1,12 @@
 {
     "name": "yireo/magento2-googletagmanager2-hyva-checkout",
-    "version": "1.0.2",
+    "version": "2.0.0",
     "description": "N/A",
     "type": "magento2-module",
     "require": {
         "magento/framework": "^102.0 || ^103.0",
         "magento/module-checkout": "^100.0",
-        "magewirephp/magewire": "^1.6",
+        "magewirephp/magewire": "^3.7",
         "yireo/magento2-googletagmanager2": "^3.10",
         "php": ">=8.2 <8.6"
     },
