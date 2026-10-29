@@ -7,8 +7,8 @@
         "magento/framework": "^102.0 || ^103.0",
         "magento/module-checkout": "^100.0",
         "magewirephp/magewire": "^3.7",
-        "yireo/magento2-googletagmanager2": "^3.10",
-        "php": ">=8.2 <8.6"
+        "php": ">=8.2 <8.6",
+        "yireo/magento2-googletagmanager2": "^3.10"
     },
     "license": [
         "OSL-3.0"
