@@ -50,14 +50,14 @@ class Checkout extends Component
     }
 
     /**
-     * Magewire 3 sends named dispatch params to the browser as the event detail,
-     * so the data layer event arrives in the template's listener unchanged.
+     * Passed as one positional param: spreading it would bind its "event" key to
+     * dispatch()'s own $event argument. The browser receives it as detail[0].
      */
     private function pushEvent(array $event): void
     {
         $this->skipRender();
         if ($event !== []) {
-            $this->dispatch('ga:trigger-event', ...$event);
+            $this->dispatch('ga:trigger-event', $event);
         }
     }
 }
