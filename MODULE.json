@@ -26,5 +26,7 @@
     "config": [],
     "tests": [],
     "module_name": "Yireo_GoogleTagManager2HyvaCheckout",
-    "composer_name": "yireo/magento2-googletagmanager2-hyva-checkout"
+    "composer_name": "yireo/magento2-googletagmanager2-hyva-checkout",
+    "phpcs_severity": "7",
+    "phpstan_level": "5"
 }
