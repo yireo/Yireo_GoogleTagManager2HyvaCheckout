@@ -1,6 +1,7 @@
 {
     "sequence": [
         "Magento_Checkout",
+        "Magewirephp_Magewire",
         "Yireo_GoogleTagManager2"
     ],
     "modules": [
