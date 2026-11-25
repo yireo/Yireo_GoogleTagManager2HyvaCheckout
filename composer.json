@@ -4,11 +4,17 @@
     "description": "N/A",
     "type": "magento2-module",
     "require": {
+        "ext-json": "*",
         "magento/framework": "^102.0 || ^103.0",
         "magento/module-checkout": "^100.0",
         "magewirephp/magewire": "^3.7",
         "php": ">=8.2 <8.6",
         "yireo/magento2-googletagmanager2": "^3.10"
+    },
+    "require-dev": {
+        "loki/magento2-functional-tests": "@dev",
+        "magento/module-quote": "^101.0",
+        "phpunit/phpunit": "^9.5 || ^10.5"
     },
     "license": [
         "OSL-3.0"
