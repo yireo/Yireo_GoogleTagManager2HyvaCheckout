@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-/** @version 2.0.0 */
+/** @version 2.0.1 */
 
 use Magento\Framework\View\Element\Template;
 use Yireo\GoogleTagManager2\DataLayer\Event\BeginCheckout as BeginCheckoutEvent;
@@ -11,17 +11,31 @@ use Yireo\GoogleTagManager2HyvaCheckout\MageWire\Checkout as CheckoutComponent;
 /** @var BeginCheckoutEvent $beginCheckoutEvent */
 /** @var CheckoutComponent $magewire */
 $beginCheckoutEvent = $block->getData('begin_checkout_event');
+$jsonFlags = JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_INVALID_UTF8_SUBSTITUTE;
+$beginCheckoutJson = json_encode($beginCheckoutEvent->get(), $jsonFlags) ?: '{}';
 ?>
 <div class="hidden">
     <script>
-        window.addEventListener('ga:trigger-event', function (event) {
-            // Magewire 3 sends dispatch() params as a list: [dataLayerEvent]
-            const data = Array.isArray(event.detail) ? event.detail[0] : event.detail;
-            yireoGoogleTagManager2Pusher(data, 'Hyva Checkout');
-        });
-
         (function () {
-            yireoGoogleTagManager2Pusher(<?= /* @noEscape */ json_encode($beginCheckoutEvent->get()) ?>, 'Hyva Checkout');
+            function isDataLayerEvent(data) {
+                return data !== null && typeof data === 'object' && typeof data.event === 'string';
+            }
+
+            window.addEventListener('ga:trigger-event', function (event) {
+                // Magewire 3 sends dispatch() params as a list: [dataLayerEvent]
+                const data = Array.isArray(event.detail) ? event.detail[0] : event.detail;
+                if (isDataLayerEvent(data)) {
+                    yireoGoogleTagManager2Pusher(data, 'Hyva Checkout');
+                }
+            });
+
+            const beginCheckout = <?= /* @noEscape */ $beginCheckoutJson ?>;
+            if (isDataLayerEvent(beginCheckout)) {
+                yireoGoogleTagManager2Pusher(beginCheckout, 'Hyva Checkout');
+            }
         })();
     </script>
+    <?php if (isset($hyvaCsp)): ?>
+        <?php $hyvaCsp->registerInlineScript() ?>
+    <?php endif; ?>
 </div>
