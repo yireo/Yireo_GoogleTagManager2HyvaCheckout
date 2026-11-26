@@ -5,29 +5,56 @@
         "Yireo_GoogleTagManager2"
     ],
     "modules": [
+        "Magento_AdminNotification",
         "Magento_Backend",
         "Magento_Catalog",
         "Magento_CatalogInventory",
+        "Magento_CatalogRule",
         "Magento_CatalogSearch",
         "Magento_Checkout",
+        "Magento_Cms",
         "Magento_Config",
         "Magento_ConfigurableProduct",
         "Magento_Cookie",
+        "Magento_Csp",
         "Magento_Customer",
+        "Magento_Directory",
         "Magento_Eav",
+        "Magento_Indexer",
+        "Magento_MediaGalleryUiApi",
+        "Magento_Msrp",
         "Magento_Payment",
         "Magento_Quote",
+        "Magento_Rule",
         "Magento_Sales",
+        "Magento_SalesSequence",
+        "Magento_Search",
         "Magento_Store",
         "Magento_Tax",
+        "Magento_Theme",
+        "Magento_User",
+        "Magento_Variable",
+        "Magewirephp_Magewire",
         "Yireo_CspUtilities",
         "Yireo_GoogleTagManager2"
     ],
     "components": [],
     "config": [],
-    "tests": [],
+    "tests": {
+        "unit": 10,
+        "integration": 0,
+        "functional": 3
+    },
     "module_name": "Yireo_GoogleTagManager2HyvaCheckout",
     "composer_name": "yireo/magento2-googletagmanager2-hyva-checkout",
     "phpcs_severity": "6",
-    "phpstan_level": "8"
+    "phpstan_level": "8",
+    "php_versions": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4"
+    ],
+    "skip_magento_versions": [],
+    "skip_css_utils": false
 }
